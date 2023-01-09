@@ -47,6 +47,7 @@ h1 {
   * 2. Show the overflow in Edge and IE.
   */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -84,6 +85,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -193,9 +195,9 @@ select {
   * Correct the inability to style clickable types in iOS and Safari.
   */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -203,9 +205,9 @@ button,
   * Remove the inner border and padding in Firefox.
   */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -214,9 +216,9 @@ button::-moz-focus-inner,
   * Restore the focus styles unset by the previous rule.
   */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -234,6 +236,7 @@ fieldset {
   *    `fieldset` elements in all browsers.
   */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -266,8 +269,9 @@ textarea {
   * 1. Add the correct box sizing in IE 10.
   * 2. Remove the padding in IE 10.
   */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -277,8 +281,8 @@ textarea {
 /**
   * Correct the cursor style of increment and decrement buttons in Chrome.
   */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -286,7 +290,7 @@ textarea {
   * 1. Correct the odd appearance in Chrome and Safari.
   * 2. Correct the outline style in Safari.
   */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -296,7 +300,7 @@ textarea {
 /**
   * Remove the inner padding in Chrome and Safari on macOS.
   */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -346,6 +350,7 @@ template {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -359,31 +364,26 @@ template {
     width: 90% !important;
   }
 }
-
 @media (max-width: 1680px) {
   .container {
     max-width: 1440px !important;
   }
 }
-
 @media (max-width: 1560px) {
   .container {
     max-width: 1280px !important;
   }
 }
-
 @media (max-width: 1400px) {
   .container {
     max-width: 1220px !important;
   }
 }
-
 @media (max-width: 1240px) {
   .container {
     max-width: 1020px !important;
   }
 }
-
 @media (max-width: 1070px) {
   .container {
     max-width: 900px !important;
@@ -394,7 +394,6 @@ template {
     grid-template-rows: 1fr 1fr 1fr !important;
   }
 }
-
 @media (max-width: 768px) {
   /*HEADER*/
   .page-header {
@@ -439,7 +438,6 @@ template {
     justify-content: center !important;
   }
 }
-
 /*COMMON STYLES*/
 html {
   scroll-behavior: smooth;
@@ -469,7 +467,7 @@ p {
 
 .h2section {
   font-size: 38px;
-  color: #f0145a;
+  color: rgb(240, 20, 90);
   filter: brightness(130%);
   margin: 0 auto 60px auto;
   width: 80%;
@@ -518,124 +516,97 @@ ul {
 .page-header {
   padding-top: 50px;
 }
-
 .page-header.light {
   background-color: #fff;
 }
-
 .page-header.light .page-header__logo .name {
   color: #323264;
 }
-
 .page-header.light .page-header__logo .slash-img {
   margin: 0 4px;
 }
-
 .page-header.light .hblock {
   color: #b3b3ba;
 }
-
 .page-header.light .phone {
   color: #b3b3ba;
 }
-
 .page-header.light .faceicon {
   filter: invert(1%) sepia(9%) saturate(4987%) hue-rotate(205deg) brightness(30%) contrast(98%);
 }
-
 .page-header.light .faceicon:hover {
   filter: invert(40%) sepia(100%) saturate(6678%) hue-rotate(330deg) brightness(93%) contrast(103%);
 }
-
 .page-header.light .hblockup__lang p:hover:not(.active) {
   background: #f5f5fa;
 }
-
 .page-header.light .hblockdown a {
   color: #24a3ff;
 }
-
 .page-header.light .hblockdown a:hover {
   border-bottom: 2px solid #24a3ff;
   transition: all 0.5s ease-out;
 }
-
 .page-header.light .hblockdown a.active {
   color: #f0145a;
   border-bottom: 2px solid #f0145a;
 }
-
 .page-header.light .page-header__logo {
   display: flex;
   align-items: center;
 }
-
 .page-header.light .page-header__logo .slash-img {
   margin: 0 4px;
   height: 70%;
 }
-
 .page-header.light .page-header__logo .name {
   font-size: 36px;
   font-weight: normal;
   margin: 0;
 }
-
 .page-header.light .page-header__logo img {
   filter: invert(60%) sepia(9%) saturate(4976%) hue-rotate(205deg) brightness(70%) contrast(98%);
 }
-
 .page-header.light .hblockup .faceicon > img {
   filter: invert(55%) sepia(9%) saturate(4987%) hue-rotate(205deg) brightness(70%) contrast(98%);
 }
-
 .page-header.dark {
   background: #323264;
 }
-
 .page-header.dark .container .page-header__logo img {
   fill: #fff;
 }
-
 .page-header.dark .page-header__logo {
   display: flex;
   align-items: center;
 }
-
 .page-header.dark .page-header__logo .slash-img {
   margin: 0 4px;
   height: 70%;
 }
-
 .page-header.dark .page-header__logo .name {
   color: #fff;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
 }
-
 .page-header.dark .hblock {
   color: #fff;
 }
-
 .page-header.dark .hblockup__lang p:hover:not(.active) {
   background: rgba(245, 245, 250, 0.2);
 }
-
 .page-header.dark .hblockdown a {
   color: #fff;
 }
-
 .page-header.dark .hblockdown a:hover {
   border-bottom: 2px solid #fff;
   transition: all 0.5s ease-out;
 }
-
 .page-header.dark .hblockdown a.active {
   color: #f0145a;
   border-bottom: 2px solid #f0145a;
 }
-
 .page-header.dark .phone {
   color: #fff;
 }
@@ -838,7 +809,8 @@ ul {
 .item__box-right:hover {
   background: #ededf7;
 }
-
 .item__box-right:hover img {
   filter: invert(40%) sepia(100%) saturate(6678%) hue-rotate(330deg) brightness(93%) contrast(103%);
 }
+
+/*# sourceMappingURL=team.css.map */

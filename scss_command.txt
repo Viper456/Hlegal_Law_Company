@@ -1,3 +1,5 @@
 sass --watch scss/style.scss:css/style.css
 sass --watch scss/contact.scss:css/contact.css
 sass --watch scss/respcont.scss:css/respcont.css
+sass --watch scss/team.scss:css/team.css
+sass --watch scss/services.scss:css/services.css

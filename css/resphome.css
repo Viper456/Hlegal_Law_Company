@@ -132,7 +132,8 @@
   }
   /*PUBLICATIONS SECTION*/
   .public__box {
-    grid-template-areas: "hd hd sd sd" "ad ad ad ad";
+    grid-template-areas: "hd hd sd sd"
+ "ad ad ad ad";
     grid-template-columns: 33% !important;
   }
   .block-1 {

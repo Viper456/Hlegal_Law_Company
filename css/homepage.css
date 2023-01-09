@@ -7,7 +7,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -350,6 +349,7 @@ template {
 }
 
 /*CONNECT FONTS AND SCSS FILES*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @media (min-width: 1920px) {
   .container {
     max-width: 1599.75px !important;
@@ -484,7 +484,8 @@ template {
   }
   /*PUBLICATIONS SECTION*/
   .public__box {
-    grid-template-areas: "hd hd sd sd" "ad ad ad ad";
+    grid-template-areas: "hd hd sd sd"
+ "ad ad ad ad";
     grid-template-columns: 33% !important;
   }
   .block-1 {

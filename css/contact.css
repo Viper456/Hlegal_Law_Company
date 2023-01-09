@@ -389,68 +389,53 @@ template {
   .container {
     max-width: 713px !important;
   }
-
-  /*CONTACTS*/
-  button {
-    width: 75% !important;
-  }
 }
 @media (max-width: 768px) {
   /*HEADER*/
   .page-header {
     padding-bottom: 115px;
   }
-
   .page-header .container {
     display: block !important;
   }
-
   .page-header__logo {
     position: absolute !important;
     top: 88px !important;
     left: 60px !important;
   }
-
   .hblockup {
     justify-content: left !important;
   }
-
   .hblockdown__nav-box {
     justify-content: left !important;
     position: absolute;
     top: 150px;
     left: 43px;
   }
-
   /*CONTACTS*/
   .contacts .container {
     flex-direction: column;
     align-items: center;
   }
-
   .container .contacts__block {
     margin-right: 0;
     width: 91%;
   }
-
   .container .contacts__help {
     width: 91%;
+    margin-top: 30px;
   }
-
   /*FOOTER*/
   .fblock__up {
     display: block !important;
   }
-
   .fblock__up p {
     text-align: center;
   }
-
   .fblock__up-left {
     justify-content: center;
     margin-bottom: 21px;
   }
-
   .fblock__down {
     justify-content: center !important;
   }
@@ -473,6 +458,12 @@ p {
   line-height: 1.62;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /*TEMPLATES CLASSES*/
 .hsection {
   color: #24a3ff;
@@ -484,7 +475,7 @@ p {
 
 .h2section {
   font-size: 38px;
-  color: #f0145a;
+  color: rgb(240, 20, 90);
   filter: brightness(130%);
   margin-top: 0;
 }
@@ -786,6 +777,7 @@ ul {
 /*CONTACTS SECTION*/
 .contacts {
   padding: 60px 0;
+  flex-grow: 1;
 }
 
 .contacts .container {

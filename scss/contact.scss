@@ -354,7 +354,7 @@ template {
 
 /*CONNECT FONTS AND SCSS FILES*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import "respcont.scss";
+@import "responsive/respcont.scss";
 
 /*COMMON STYLES*/
 
@@ -373,6 +373,12 @@ a {
 p {
    font-size: 16px;
    line-height: 1.62;
+}
+
+.wrapper {
+   display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 /*TEMPLATES CLASSES*/
@@ -721,6 +727,7 @@ ul {
 /*CONTACTS SECTION*/
 .contacts {
    padding: 60px 0;
+   flex-grow: 1;
 }
 
 .contacts .container {
@@ -801,12 +808,6 @@ textarea:focus {
    outline: none;
    border: 1px solid #24a3ff;
 }
-
-// input:invalid,
-// textarea:invalid {
-//    outline: none;
-//    border: 1px solid #f00;
-// }
 
 ::-webkit-input-placeholder {
    color: #b3b3ba;
