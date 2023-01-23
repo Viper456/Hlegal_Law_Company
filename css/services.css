@@ -354,7 +354,7 @@ template {
   box-sizing: border-box;
 }
 
-/*CONNECT FONTS AND SCSS FILES*/
+/*CONNECT FONTS AND FILES FOR RESPONSIVE DESIGN*/
 @media (min-width: 1920px) {
   .container {
     max-width: 1599.75px !important;

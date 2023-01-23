@@ -352,9 +352,9 @@ template {
    box-sizing: border-box;
 }
 
-/*CONNECT FONTS AND SCSS FILES*/
+/*CONNECT FONTS AND FILES FOR RESPONSIVE DESIGN*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import "responsive/respteam.scss";
+@import "./responsive/resppublic";
 
 /*COMMON STYLES*/
 html {
@@ -363,6 +363,7 @@ html {
 
 body {
    font-family: "Montserrat", sans-serif;
+   background-color: #f5f5fa;
 }
 
 a {
@@ -387,20 +388,35 @@ p {
    font-size: 38px;
    color: rgb(240, 20, 90);
    filter: brightness(130%);
-   margin: 0 auto 60px auto;
-   width: 80%;
+   margin-top: 10px;
 }
 
 .h4section {
    font-size: 16px;
-   color: #323264;
-   margin-top: 15px;
-   margin-bottom: 5px;
+   color: #24a3ff;
+   margin-top: 30px;
+   margin-bottom: 15px;
 }
 
 .h4section:hover {
    color: #f0145a;
    cursor: pointer;
+}
+
+.h3grid {
+   color: #24a3ff;
+   font-size: 22px;
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+
+.hdate {
+   font-size: 12px;
+   font-weight: bold;
+   color: #b3b3ba;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 15px;
 }
 
 .bluelink {
@@ -647,7 +663,7 @@ ul {
 /*FOOTER*/
 .page-footer {
    background: #f5f5fa;
-   padding: 30px 0;
+   padding-bottom: 30px;
 }
 
 .fline {
@@ -719,48 +735,99 @@ ul {
    color: #b3b3ba;
 }
 
-/*TEAM SECTION*/
-.team {
-   padding: 60px 0;
+/*NEWS SECTION*/
+.news {
+   padding-top: 30px;
 }
 
-.team-grid {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   gap: 60px 60px;
+.news__menu a.active {
+   background: #ffffff;
+   border-radius: 10px;
 }
 
-.item img {
-   border-radius: 12px;
-}
-
-.position {
-   margin: 0;
-   color: #b3b3ba;
-   font-size: 14px;
-   line-height: 1.57;
-}
-
-.item__box {
+.news__menu {
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+   width: 233px;
+   background: #e6e6f0;
+   border-radius: 12px;
+   margin: 0 auto;
 }
 
-.item__box-right {
+.news__menu a {
    display: inline-block;
-   border: none;
-   border-radius: 50%;
-   background: #f5f5fa;
-   text-align: center;
-   padding: 8.5px 13.5px;
+   padding: 8px 30px 10px 30px;
+   margin: 2px;
+   color: #323264;
+   font-weight: bold;
 }
 
-.item__box-right:hover {
-   background: #ededf7;
-   img {
-      filter: invert(40%) sepia(100%) saturate(6678%) hue-rotate(330deg)
-         brightness(93%) contrast(103%);
-   }
+.news__menu a:hover:not(.active) {
+   background: #f5f5fa;
+   border-radius: 10px;
+}
+
+/*PART PUBLICATIONS SECTION*/
+.publications {
+   background: #f5f5fa;
+   padding: 30px 0;
+}
+
+.public__box {
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.public__block {
+   width: 33.33%;
+   border-radius: 8px;
+   background: #ffffff;
+}
+
+.public__block p {
+   margin-top: 15px;
+}
+
+.mblock {
+   margin: 0 30px;
+}
+
+.pblock {
+   padding: 0 30px;
+}
+
+.pmarg1 {
+   margin-bottom: 70px;
+}
+
+.pmarg2 {
+   margin-bottom: 30px;
+}
+
+.pmarg3 {
+   margin-bottom: 48px;
+}
+
+.line {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.own-img {
+   width: 100%;
+}
+
+.more-btn {
+   display: flex;
+   justify-content: center;
+}
+
+.more-public {
+   display: inline-block;
+   padding: 18px 30px;
+   color: #fff;
+   background: #24a3ff;
+   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+   border-radius: 12px;
+   font-weight: bold;
 }
