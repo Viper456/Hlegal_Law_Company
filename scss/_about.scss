@@ -725,8 +725,9 @@ ul {
 
 .idea .container {
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
+   gap: 2rem;
 }
 
 .turn__box {
@@ -743,9 +744,9 @@ ul {
    margin-bottom: 0;
 }
 
-.line {
-   margin: 0 30px;
-}
+// .line {
+//    margin: 0 30px;
+// }
 
 .idea__box {
    display: flex;
@@ -769,7 +770,7 @@ ul {
 /*TEAM HEADER*/
 .team-header {
    background: url("../images/about/team.jpg") no-repeat;
-   background-size: 100%;
+   background-size: cover;
 }
 
 .team-header h1 {
@@ -781,7 +782,7 @@ ul {
    opacity: 0.8;
    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
    text-align: center;
-   padding: 163px 481px 163px 481px;
+   padding: 163px 0 163px 0;
    margin: 0;
 }
 
@@ -789,6 +790,7 @@ ul {
 .quality .container {
    display: flex;
    justify-content: center;
+   gap: 2rem;
 }
 
 .quality {
@@ -797,7 +799,6 @@ ul {
 
 .quality__box {
    width: 51.75%;
-   margin-right: 60px;
 }
 
 .quality__box p {
@@ -823,25 +824,19 @@ ul {
    background: #f5f5fa;
 }
 
-#slick-slide01 {
-   margin-left: 40px;
+.achievements__block {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 1rem;
+
+   .achievements__box{
+      background: #FFFFFF;
+      border-radius: 12px;
+      flex: 1 1 calc((100% / 4) - 2rem);
+      text-align: center;
+      padding: 25px 0;
+   }
 }
 
-#slick-slide02 {
-   margin: 0 40px;
-}
 
-.slick-slide {
-   padding: 25px 0;
-   background: #fff;
-   border-radius: 12px;
-   width: 22.33% !important;
-}
-
-.slick-slide img {
-   margin: 0 auto;
-}
-
-.slick-track {
-   margin-bottom: 30px;
-}
