@@ -862,13 +862,14 @@ ul {
 }
 
 .public__box {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr;
-   column-gap: 30px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 2rem;
 }
 
 .public__block {
+   flex: 1 1 calc((100% / 3) - 2rem);
    border-radius: 8px;
    background: #ffffff;
 }
