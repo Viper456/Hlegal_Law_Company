@@ -402,10 +402,6 @@ template {
   .common-bg {
     background-size: contain !important;
   }
-  /*ORIENTED SECTION*/
-  .oriented__box-list li {
-    word-break: break-all;
-  }
   /*TEAM SECTION*/
   .team__block-text h2 {
     width: 95% !important;
@@ -453,10 +449,12 @@ template {
   }
   .mline {
     transform: rotate(90deg);
-    margin: 0 !important;
+    margin: -70px 0 !important;
   }
   .oriented__box-list {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     margin: 0;
   }
   .oriented__box-list li {
@@ -620,6 +618,12 @@ template {
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
     column-gap: 0;
+  }
+  .item-1 p {
+    margin-bottom: 0 !important;
+  }
+  .item-3 p {
+    margin-bottom: 0 !important;
   }
   /*TEAM SECTION*/
   .team__block-text .h2section {
@@ -1032,14 +1036,17 @@ ul {
 
 .item-4 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .item-5 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .item-6 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .box {
