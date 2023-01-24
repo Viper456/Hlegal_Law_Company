@@ -355,7 +355,7 @@ template {
 }
 
 /*CONNECT FONTS AND FILES FOR RESPONSIVE DESIGN*/
-@media (min-width: 1920px) {
+@media (max-width: 1920px) {
   .container {
     max-width: 1599.75px !important;
   }
@@ -378,6 +378,9 @@ template {
 @media (max-width: 1400px) {
   .container {
     max-width: 1220px !important;
+  }
+  .team-header h1 {
+    padding: 163px 0 !important;
   }
 }
 @media (max-width: 1240px) {
@@ -781,11 +784,6 @@ ul {
   margin-bottom: 0;
 }
 
-.idea__box {
-  display: flex;
-  align-items: center;
-}
-
 .idea__block {
   color: #323264;
   width: 60.55%;
@@ -864,7 +862,7 @@ ul {
   gap: 1rem;
 }
 .achievements__block .achievements__box {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 12px;
   flex: 1 1 calc(25% - 2rem);
   text-align: center;

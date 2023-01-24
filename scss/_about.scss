@@ -744,15 +744,6 @@ ul {
    margin-bottom: 0;
 }
 
-// .line {
-//    margin: 0 30px;
-// }
-
-.idea__box {
-   display: flex;
-   align-items: center;
-}
-
 .idea__block {
    color: #323264;
    width: 60.55%;
@@ -830,13 +821,11 @@ ul {
    flex-wrap: wrap;
    gap: 1rem;
 
-   .achievements__box{
-      background: #FFFFFF;
+   .achievements__box {
+      background: #ffffff;
       border-radius: 12px;
       flex: 1 1 calc((100% / 4) - 2rem);
       text-align: center;
       padding: 25px 0;
    }
 }
-
-
