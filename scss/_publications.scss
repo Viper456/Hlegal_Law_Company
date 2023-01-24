@@ -773,22 +773,23 @@ ul {
 }
 
 .public__box {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 30px 30px;
    margin-bottom: 30px;
 }
 
 .public__block {
-   width: 33.33%;
+   // width: 33.33%;
    border-radius: 8px;
    background: #ffffff;
 }
 
-.public__block p {
-   margin-top: 15px;
-}
-
-.mblock {
-   margin: 0 30px;
+.public__block {
+   p {
+      margin-top: 15px;
+   }
 }
 
 .pblock {
