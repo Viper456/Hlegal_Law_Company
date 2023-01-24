@@ -362,12 +362,6 @@ template {
   /*TRUST SECTION*/
   .trust-grid {
     margin: 0 100px;
-    border-radius: 12px 12px 12px 12px;
-  }
-}
-@media (max-width: 1680px) {
-  .container {
-    max-width: 1440px !important;
   }
 }
 @media (max-width: 1560px) {
@@ -388,6 +382,11 @@ template {
 @media (max-width: 1070px) {
   .container {
     max-width: 900px !important;
+  }
+}
+@media (max-width: 940px) {
+  .container {
+    max-width: 819px !important;
   }
 }
 @media (max-width: 768px) {
@@ -417,13 +416,13 @@ template {
     padding-top: 180px !important;
   }
   .services-grid {
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
   }
   /*TRUST SECTION*/
   .trust-grid {
-    grid-template-columns: 1fr 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr 1fr !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(4, 1fr) !important;
   }
   /*FOOTER*/
   .fblock__up {
@@ -443,6 +442,11 @@ template {
 @media (max-width: 620px) {
   .container {
     max-width: 500px !important;
+  }
+  /*TRUST*/
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
   }
 }
 @media (max-width: 520px) {
@@ -480,7 +484,7 @@ template {
     flex-direction: column;
     position: absolute;
     top: 30%;
-    left: 15%;
+    left: 25%;
   }
   .fblock__down .sep {
     visibility: hidden;
@@ -489,6 +493,13 @@ template {
 @media (max-width: 440px) {
   .container {
     max-width: 300px !important;
+  }
+  /*SERVICES SECT*/
+  .item-1 p {
+    margin-bottom: 0 !important;
+  }
+  .item-3 p {
+    margin-bottom: 0 !important;
   }
   /*HEADER*/
   .page-header {
@@ -526,6 +537,10 @@ template {
   .trust-grid {
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+  }
+  /*FOOTER*/
+  .fblock__down {
+    left: 16%;
   }
 }
 /*COMMON STYLES*/
@@ -861,7 +876,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  justify-items: stretch;
 }
 
 .lay img {
