@@ -544,6 +544,11 @@ template {
   .home__header h1 {
     margin-bottom: 160px !important;
   }
+  /*TRUST SECTION*/
+  .trust-grid {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr !important;
+  }
   /*PUBLICATIONS SECT*/
   .public__box {
     grid-template-areas: "hd" "ld" "md";
