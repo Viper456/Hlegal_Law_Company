@@ -296,9 +296,18 @@
    .hblockup {
       position: absolute;
       top: 10px;
-      right: -29px;
+      right: 33px;
+      justify-content: space-between !important;
+      .phone + img {
+         display: none;
+      }
+
+      .faceicon {
+         display: none;
+      }
+
       img {
-         visibility: hidden;
+         display: none;
       }
       p:not(.ln) {
          visibility: hidden;
