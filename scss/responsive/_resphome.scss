@@ -1,3 +1,12 @@
+$maxWidth: 1280;
+@mixin respons-font($pcSize, $mobSize) {
+   $addSize: $pcSize - $mobSize;
+   $maxWidth: $maxWidth - 320;
+   font-size: calc(
+      #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+   );
+}
+
 @media (min-width: 1920px) {
    .container {
       max-width: 1599.75px !important;
@@ -48,11 +57,11 @@
    /*COMMON BG FOR 3 SECTIONS*/
    .common-bg {
       background-size: contain !important;
-   }   
+   }
 
    /*TEAM SECTION*/
-   .team__block-text h2 {
-      width: 95% !important;
+   .team__block-text .h2section {
+      width: 95%;
    }
 }
 
@@ -110,6 +119,10 @@
       margin: -70px 0 !important;
    }
 
+   .oriented__box li > a {
+      @include respons-font(38, 34);
+   }
+
    .oriented__box-list {
       display: flex;
       flex-direction: column;
@@ -125,6 +138,10 @@
    }
 
    /*SERVICES SECTION*/
+   .services .container .h2section {
+      @include respons-font(38, 34);
+   }
+
    .services-grid {
       grid-template-columns: 1fr 1fr !important;
       grid-template-rows: 1fr 1fr 1fr !important;
@@ -135,6 +152,10 @@
       flex-direction: column !important;
    }
 
+   .team__block-text .h2section {
+      @include respons-font(38, 34);
+   }
+
    /*TRUST SECTION*/
    .trust-grid {
       grid-template-columns: 1fr 1fr 1fr !important;
@@ -142,6 +163,10 @@
    }
 
    /*PUBLICATIONS SECTION*/
+   .publications .container .h2section {
+      @include respons-font(38, 34);
+   }
+
    .public__box {
       display: grid !important;
       grid-template-areas:
@@ -332,9 +357,9 @@
 
    .item-1 p {
       margin-bottom: 0 !important;
-   } 
+   }
 
-   .item-3 p{
+   .item-3 p {
       margin-bottom: 0 !important;
    }
 

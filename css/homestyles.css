@@ -398,8 +398,8 @@ template {
     background-size: contain !important;
   }
   /*TEAM SECTION*/
-  .team__block-text h2 {
-    width: 95% !important;
+  .team__block-text .h2section {
+    width: 95%;
   }
 }
 @media (max-width: 940px) {
@@ -446,6 +446,11 @@ template {
     transform: rotate(90deg);
     margin: -70px 0 !important;
   }
+  .oriented__box li > a {
+    font-size: calc(
+      34px + 4 * ((100vw - 320px) / 960)
+   );
+  }
   .oriented__box-list {
     display: flex;
     flex-direction: column;
@@ -459,6 +464,11 @@ template {
     width: 100% !important;
   }
   /*SERVICES SECTION*/
+  .services .container .h2section {
+    font-size: calc(
+      34px + 4 * ((100vw - 320px) / 960)
+   );
+  }
   .services-grid {
     grid-template-columns: 1fr 1fr !important;
     grid-template-rows: 1fr 1fr 1fr !important;
@@ -467,12 +477,22 @@ template {
   .team__block.slick-slide.slick-current.slick-active {
     flex-direction: column !important;
   }
+  .team__block-text .h2section {
+    font-size: calc(
+      34px + 4 * ((100vw - 320px) / 960)
+   );
+  }
   /*TRUST SECTION*/
   .trust-grid {
     grid-template-columns: 1fr 1fr 1fr !important;
     grid-template-rows: 1fr 1fr 1fr 1fr !important;
   }
   /*PUBLICATIONS SECTION*/
+  .publications .container .h2section {
+    font-size: calc(
+      34px + 4 * ((100vw - 320px) / 960)
+   );
+  }
   .public__box {
     display: grid !important;
     grid-template-areas: "hd ld" "md md";
