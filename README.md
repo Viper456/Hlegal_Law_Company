@@ -19,7 +19,7 @@ My first final project on Front-End Basic course
 -added some AOS animations for h2 text and images in services section of home page.
 
 26.01.23 |
-add responsive font for h2 headers in sections.
+-add responsive font for h2 headers in sections.
 
 27.01.23 |
 -removed normalize.css(reset styles) to _reset.scss and imported to other .scss files.
