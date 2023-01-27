@@ -15,5 +15,11 @@ My first final project on Front-End Basic course
 -fixed some bugs with sections;
 -fixed bug with responsive design for home page;
 -fixed issue with responsive header(white space);
--add Slick slider config and AOS init to scripts.js;
--add some AOS animations for h2 text and images in services section of home page.
+-added Slick slider config and AOS init to scripts.js;
+-added some AOS animations for h2 text and images in services section of home page.
+
+26.01.23 |
+-add responsive font for h2 headers in sections.
+
+27.01.23 |
+-removed normalize.css(reset styles) to _reset.scss and imported to other .scss files.
