@@ -47,9 +47,11 @@ $maxWidth: 1280;
       max-width: 1220px !important;
    }
 
-   .team-header h1 {
-      @include respons-font(96, 93);
+   .team-header {
       padding: 163px 0 !important;
+      h1 {
+         @include respons-font(96, 46);
+      }
    }
 }
 
@@ -70,7 +72,7 @@ $maxWidth: 1280;
    }
 
    /*TEAM*/
-   .team-header h1 {
+   .team-header {
       padding: 103px 0 !important;
    }
 }
@@ -135,8 +137,7 @@ $maxWidth: 1280;
    }
 
    /*TEAM*/
-   .team-header h1 {
-      @include respons-font(90, 46);
+   .team-header {
       padding: 163px 0 !important;
    }
 
@@ -172,7 +173,7 @@ $maxWidth: 1280;
       justify-content: center !important;
    }
 }
- 
+
 @media (max-width: 620px) {
    .container {
       max-width: 500px !important;
@@ -192,17 +193,15 @@ $maxWidth: 1280;
       left: 0;
    }
 }
- 
+
 @media (max-width: 520px) {
    .container {
       max-width: 400px !important;
    }
 }
- 
+
 @media (max-width: 440px) {
    .container {
       max-width: 300px !important;
    }
 }
- 
-@media (max-width: 375px) {}
