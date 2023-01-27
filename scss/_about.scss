@@ -8,7 +8,7 @@
 /*CONNECT FONTS AND FILES FOR RESPONSIVE DESIGN*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import "./reset";
-@import "./responsive/respabout.scss";
+@import "./responsive/respabout";
 
 /*COMMON STYLES*/
 
@@ -381,11 +381,11 @@ ul {
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   gap: 2rem;
+   gap: 1rem;
 }
 
 .turn__box {
-   width: 51.75%;
+   width: 58.95%;
 }
 
 .turn__box p {
@@ -400,7 +400,7 @@ ul {
 
 .idea__block {
    color: #323264;
-   width: 60.55%;
+   width: 69.55%;
 }
 
 .idea__block-achieve {
@@ -427,14 +427,14 @@ ul {
    opacity: 0.8;
    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
    text-align: center;
-   padding: 163px 0 163px 0;
+   padding: 236px 0 231px 0;
    margin: 0;
 }
 
 /*QUALITY SECTION*/
 .quality .container {
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 2rem;
 }
 
@@ -443,7 +443,7 @@ ul {
 }
 
 .quality__box {
-   width: 51.75%;
+   width: 58.75%;
 }
 
 .quality__box p {
@@ -456,7 +456,7 @@ ul {
 }
 
 .quality__header {
-   width: 362px;
+   width: 28.3%;
 }
 
 .quality__header .h2section {
@@ -473,7 +473,7 @@ ul {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   gap: 1rem;
+   gap: 2rem;
 
    .achievements__box {
       background: #ffffff;
