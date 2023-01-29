@@ -409,9 +409,20 @@ template {
   .turn__box {
     width: 96.95% !important;
   }
+  .turn__box .h2section {
+    font-size: calc(
+      32px + 6 * ((100vw - 320px) / 960)
+   ) !important;
+  }
   /*TEAM*/
   .team-header {
     padding: 103px 0 !important;
+  }
+  /*QUALITY SECT*/
+  .quality__header .h2section {
+    font-size: calc(
+      32px + 6 * ((100vw - 320px) / 960)
+   ) !important;
   }
 }
 @media (max-width: 940px) {

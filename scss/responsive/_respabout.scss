@@ -69,11 +69,19 @@ $maxWidth: 1280;
    /*ITEA SECT*/
    .turn__box {
       width: 96.95% !important;
+      .h2section {
+         @include respons-font(38, 32);
+      }
    }
 
    /*TEAM*/
    .team-header {
       padding: 103px 0 !important;
+   }
+
+   /*QUALITY SECT*/
+   .quality__header .h2section {
+      @include respons-font(38, 32);
    }
 }
 
