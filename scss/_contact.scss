@@ -399,11 +399,11 @@ ul {
 }
 
 .contacts__block p {
-   margin-top: 0;
-   margin-bottom: 30px;
+   margin: 0;
 }
 
-.contacts__block img {
+.contacts__block .line {
+   margin-top: 30px;
    margin-bottom: 30px;
    width: 100%;
 }
@@ -413,12 +413,9 @@ ul {
    margin-bottom: 15px;
 }
 
-.contacts__block a + img {
-   margin-top: 30px;
-}
-
 .faceb {
-   display: flex;
+   display: inline-flex;
+   align-items: center;
 }
 
 .faceb:hover a > img {
