@@ -449,7 +449,7 @@ template {
     left: 60px !important;
   }
   .hblockup {
-    justify-content: left !important;
+    justify-content: center !important;
   }
   .hblockdown__nav-box {
     justify-content: left !important;
@@ -488,6 +488,10 @@ template {
   .quality__header {
     width: 92% !important;
   }
+  /*ACHIEVEMENTS SECT*/
+  .achievements__block {
+    margin: 0 20px;
+  }
   /*FOOTER*/
   .fblock__up {
     display: block !important;
@@ -517,6 +521,10 @@ template {
   }
   .line {
     left: 0;
+  }
+  /*ACHIEVEMENTS SECT*/
+  .achievements__block {
+    margin: 0;
   }
 }
 @media (max-width: 520px) {
@@ -955,15 +963,14 @@ ul {
 }
 
 .achievements__block {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 .achievements__block .achievements__box {
   background: #ffffff;
   border-radius: 12px;
-  flex: 1 1 calc(25% - 2rem);
   text-align: center;
   padding: 25px 0;
 }

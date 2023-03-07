@@ -470,15 +470,14 @@ ul {
 }
 
 .achievements__block {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   gap: 2rem;
+   display: grid;
+   align-items: center;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   gap: 1.5rem;
 
    .achievements__box {
       background: #ffffff;
       border-radius: 12px;
-      flex: 1 1 calc((100% / 4) - 2rem);
       text-align: center;
       padding: 25px 0;
    }
