@@ -25,5 +25,5 @@ My first final project on Front-End Basic course
 -removed normalize.css(reset styles) to _reset.scss and imported to other .scss files;
 -fixed responsive web-design for idea, team and quality sections
 
-17.02.23 |
+18.02.23 |
 -fixed issues with hover to faceb and margins in contacts page.
